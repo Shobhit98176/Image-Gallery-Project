@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> Image Gallery </title>
+</head>
+
+<body>
+    <h1>Welcome To Image Gallery</h1>
+
+    <div class="filter-buttons">
+    <button data-filter="all">All</button>
+    <button data-filter="architecture">Architecture</button>
+    <button data-filter="technology">Technology</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="flower">Flower</button>
+    <button data-filter="animal">Animal</button>
+  </div>
+
+    <div class="navContainer">
+        <div class="logo">
+            <a href="index.html">Image Gallery</a>
+        </div>
+        <div class="navItems" id="navItems">
+            <ul>
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="full-image" id="fullImageBox">
+        <button id="prevBtn" onclick="prevImage()">⟨</button>
+        <img src="images/1 (1).jpg" id="fullImage">
+        <button id="nextBtn" onclick="nextImage()">⟩</button>
+        <span onclick="closeFullImage()">X</span>
+        <a id="downloadBtn" href="" download>
+            <button>Download</button>
+        </a>
+    </div>
+
+    <div class="image-gallery">
+        <img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg" width="600" height="500" alt="Architecture 1" onclick="openFullImage(this.src)">
+        <img src="https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://images.pexels.com/photos/2523644/pexels-photo-2523644.jpeg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://eskipaper.com/images/nature-27.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://wallpaperaccess.com/full/1163807.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://wallpapercave.com/wp/wp7341157.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://cdn.wallpapersafari.com/98/9/Y3f8uF.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Flower-Wallpaper-High-Resolution.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/06/92/71/19/240_F_692711934_lDuLd6JcEKXrKfyNWMGsf1uuVEUAnPYX.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://img.freepik.com/premium-photo/beautiful-persian-kitten-with-beautiful-background_1019272-1139.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://img.freepik.com/premium-photo/tiger-green-background_865967-8087.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+        <img src="https://e0.pxfuel.com/wallpapers/124/546/desktop-wallpaper-lion-2-in-resolution-lion-lion-graphy-wild-lion-beautiful-lions.jpg" width="600" height="500" onclick="openFullImage(this.src)">
+    </div>
+
+    <div class="btns">
+        <button id="prev-button">Prev</button>
+        <button id="next-button">Next</button>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <p class="text"> This Website is Developed by Shobhit Pal &#128151 </p>
+            <p class="copyText"> &#169 Copyright 2025 all rights reserved to Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+
+
+
+</body>
+
+</html>
